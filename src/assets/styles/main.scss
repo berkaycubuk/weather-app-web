@@ -15,6 +15,7 @@ body {
 }
 
 .location-and-time {
+  width: 100%;
   padding: 1rem;
   margin: 1rem 0;
   background-color: #fff;
@@ -77,6 +78,53 @@ body {
       .day-degree {
         color: #222222;
         font-weight: bold;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .weather-days {
+    .weather-day {
+      width: 150px;
+
+      .weather-icon {
+        width: 50px;
+      }
+
+      .weather-details {
+        .day-name {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 300px;
+  }
+
+  .weather-days {
+    flex-direction: column;
+
+    .weather-day {
+      width: 100%;
+      margin: 0.5rem 0;
+
+      .weather-icon {
+        width: 60px;
+      }
+
+      .weather-details {
+        .day-name {
+          font-size: 1.2rem;
+        }
       }
     }
   }
