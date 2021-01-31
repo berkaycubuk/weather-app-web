@@ -1,0 +1,83 @@
+@import "variables";
+
+* {
+  font-family: $font-primary;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.location-and-time {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 8px;
+
+  .location {
+    margin-bottom: 0.4rem;
+    color: #222222;
+    font-size: 2rem;
+  }
+
+  .time {
+    color: #222222;
+    font-size: 1.2rem;
+  }
+}
+
+.weather-and-temperature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+
+  .weather {
+    width: 200px;
+  }
+
+  .temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222222;
+  }
+}
+
+.weather-days {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+
+  .weather-day {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 0.8rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+
+    .weather-icon {
+      width: 100px;
+    }
+
+    .weather-details {
+      margin-left: 1rem;
+
+      .day-name {
+        font-size: 1.2rem;
+        color: #222222;
+      }
+
+      .day-degree {
+        color: #222222;
+        font-weight: bold;
+      }
+    }
+  }
+}
